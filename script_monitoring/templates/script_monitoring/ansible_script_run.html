@@ -1,0 +1,15 @@
+{% extends 'script_monitoring/index.html' %}
+
+{% block content %}
+
+<div>
+    <h2>Run ansible script</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="script_path">Script:</label>
+        <input id="script_path" type="text" name="script_path">
+        <input type="submit" value="Run">
+    </form>
+</div>
+
+{% endblock %}
