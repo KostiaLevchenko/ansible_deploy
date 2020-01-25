@@ -1,1 +1,2 @@
-django
+django==3.0.2
+ruamel.yaml==0.15.96
